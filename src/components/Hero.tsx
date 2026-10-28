@@ -87,8 +87,8 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
-          src="/logo/background.jpg"
-          alt="Hero Background"
+          src="/profile/vinita-professional.jpg"
+          alt="Vinita Sharma"
           fill
           priority
           className="object-cover hero-bg-image"
@@ -96,15 +96,15 @@ export function Hero() {
         />
         {/* Mobile dark overlay (fades to black at the bottom) */}
         <div 
-          className="absolute inset-0 z-5 block md:hidden"
+          className="absolute inset-0 z-5 block md:hidden pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.85) 60%, rgba(10,10,10,0.98) 100%)',
+            background: 'linear-gradient(to bottom, rgba(10,10,10,0.15) 0%, rgba(10,10,10,0.85) 60%, rgba(10,10,10,0.98) 100%)',
             zIndex: 5,
           }}
         />
         {/* Desktop dark overlay (spotlight on the right, fades to black on the left) */}
         <div 
-          className="absolute inset-0 z-5 hidden md:block"
+          className="absolute inset-0 z-5 hidden md:block pointer-events-none"
           style={{
             background: 'radial-gradient(circle at 72% 40%, rgba(10,10,10,0) 0%, rgba(10,10,10,0.88) 55%, rgba(10,10,10,0.98) 100%)',
             zIndex: 5,

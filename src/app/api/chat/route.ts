@@ -37,6 +37,7 @@ She builds high-impact software, blending modern frontend and backend technologi
 
 GitHub: github.com/vinita8981
 LinkedIn: linkedin.com/in/vinita-sharma-9506a1375/
+Email: vinitasharma0066@gmail.com
 
 ---
 
@@ -180,7 +181,7 @@ On the data and deployment side, she works with PostgreSQL, MongoDB, MySQL, and 
   if (q.includes('hire') || q.includes('available') || q.includes('contact') || q.includes('email') || q.includes('reach') || q.includes('job') || q.includes('work') || q.includes('resume')) {
     return `Vinita is open to discussing new opportunities, full-time engineering roles, and collaboration requests.
 
-You can connect with her directly on LinkedIn at https://www.linkedin.com/in/vinita-sharma-9506a1375/ or check her code on GitHub at https://github.com/vinita8981. You can also fill out the contact form here on the dashboard.`;
+You can email her directly at vinitasharma0066@gmail.com, connect with her on LinkedIn at https://www.linkedin.com/in/vinita-sharma-9506a1375/, or check her code on GitHub at https://github.com/vinita8981. You can also send a message using the contact modal right here on her site.`;
   }
 
   // Greeting or general query fallback

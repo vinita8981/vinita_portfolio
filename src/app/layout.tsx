@@ -183,7 +183,7 @@ const personSchema = {
   jobTitle: 'Full Stack Engineer',
   description:
     'Full Stack Engineer building scalable web and ML applications using React, Node.js, Python, and AWS.',
-  email: 'anshverma24112005@gmail.com',
+  email: 'vinitasharma0066@gmail.com',
   nationality: { '@type': 'Country', name: 'India' },
   hasOccupation: {
     '@type': 'Occupation',

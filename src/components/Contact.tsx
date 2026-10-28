@@ -460,7 +460,7 @@ export function Contact() {
             <div className="overflow-hidden mb-8">
               <a
                 ref={emailRef}
-                href="mailto:anshverma24112005@gmail.com"
+                href="mailto:vinitasharma0066@gmail.com"
                 className="block font-black text-white tracking-[-0.04em] leading-[0.88] hover:text-white/45 transition-colors duration-300 will-change-transform"
                 style={{
                   fontFamily: 'Satoshi, system-ui, sans-serif',
@@ -469,7 +469,7 @@ export function Contact() {
                   wordBreak: 'break-all',
                 }}
               >
-                anshverma24112005@gmail.com
+                vinitasharma0066@gmail.com
               </a>
             </div>
 
@@ -481,7 +481,7 @@ export function Contact() {
             >
               <MagneticCTA onClick={() => setModalOpen(true)} />
               <a
-                href="mailto:anshverma24112005@gmail.com"
+                href="mailto:vinitasharma0066@gmail.com"
                 className="text-[0.62rem] tracking-[0.18em] uppercase text-white/28 hover:text-white/60 transition-colors duration-200 font-medium"
                 style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
               >

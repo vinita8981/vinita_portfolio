@@ -1,16 +1,17 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Sparkles, ArrowUpRight } from 'lucide-react';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const SUGGESTIONS = [
-  { label: 'Strongest projects?',    query: 'What are his strongest projects?' },
-  { label: 'Built anything with AI?', query: 'Has he built anything with AI?' },
-  { label: 'Backend stack?',          query: 'What backend technologies does he use?' },
-  { label: 'Available to hire?',      query: 'Is he available for hire?' },
+  { label: 'Strongest projects?',    query: 'What are her strongest projects?' },
+  { label: 'Built anything with AI?', query: 'Has she built anything with AI?' },
+  { label: 'Backend stack?',          query: 'What backend technologies does she use?' },
+  { label: 'Available to hire?',      query: 'Is she available for hire?' },
 ];
 
 interface Message {
@@ -281,20 +282,26 @@ export function AIAssistant() {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  {/* Icon box */}
+                  {/* Avatar box */}
                   <div
                     style={{
-                      width: 32,
-                      height: 32,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      border: '1px solid rgba(255,255,255,0.1)',
-                      background: 'rgba(255,255,255,0.03)',
+                      width: 34,
+                      height: 34,
+                      position: 'relative',
+                      borderRadius: '50%',
+                      overflow: 'hidden',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                      background: 'rgba(255,255,255,0.05)',
                       flexShrink: 0,
                     }}
                   >
-                    <Sparkles size={12} style={{ color: 'rgba(255,255,255,0.45)' }} />
+                    <Image
+                      src="/profile/vinita-professional.jpg"
+                      alt="Vinita Sharma"
+                      fill
+                      sizes="34px"
+                      className="object-cover object-top"
+                    />
                   </div>
 
                   <div>
