@@ -9,7 +9,7 @@ export const contentType = 'image/png';
 const STACK = ['Next.js', 'React', 'Django', 'Go', 'PostgreSQL', 'AWS'];
 
 export default function Image() {
-  const logoBuffer = readFileSync(join(process.cwd(), 'public/logo/MILIND VERMA.png'));
+  const logoBuffer = readFileSync(join(process.cwd(), 'public/logo/VINITA SHARMA.png'));
   const logoSrc = `data:image/png;base64,${logoBuffer.toString('base64')}`;
 
   return new ImageResponse(
@@ -43,10 +43,10 @@ export default function Image() {
 
           <img
             src={logoSrc}
-            alt="Milind Verma"
-            width={104}
-            height={66}
-            style={{ objectFit: 'contain' }}
+            alt="Vinita Sharma"
+            width={80}
+            height={80}
+            style={{ objectFit: 'cover', borderRadius: '50%' }}
           />
         </div>
 
@@ -73,7 +73,7 @@ export default function Image() {
                 letterSpacing: '-0.03em',
               }}
             >
-              Milind
+              Vinita
             </span>
             <span
               style={{
@@ -84,7 +84,7 @@ export default function Image() {
                 letterSpacing: '-0.03em',
               }}
             >
-              Verma
+              Sharma
             </span>
           </div>
 
@@ -138,7 +138,7 @@ export default function Image() {
               letterSpacing: '0.08em',
             }}
           >
-            milindverma24.github.io
+            vinita8981.github.io
           </span>
         </div>
       </div>

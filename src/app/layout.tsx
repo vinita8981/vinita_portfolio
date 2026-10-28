@@ -11,24 +11,23 @@ const instrumentSerif = Instrument_Serif({
   display: 'swap',
 });
 
-const BASE_URL = 'https://milindverma24.github.io';
+const BASE_URL = 'https://vinita8981.github.io';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: 'Milind Verma | Full Stack Engineer & Web Developer',
-    template: '%s | Milind Verma',
+    default: 'Vinita Sharma | Full Stack Engineer & Web Developer',
+    template: '%s | Vinita Sharma',
   },
 
   description:
-    'Milind Verma (its_milind) — Full Stack Engineer with expertise in Next.js, React, Node.js, Python, and Machine Learning. Available for hire.',
+    'Vinita Sharma — Full Stack Engineer with expertise in Next.js, React, Node.js, Python, and Machine Learning. Available for hire.',
 
   keywords: [
     // Brand / name
-    'Milind Verma',
-    'its_milind',
-    'Milindverma24',
+    'Vinita Sharma',
+    'vinita8981',
     // Role
     'Full Stack Engineer',
     'Full Stack Developer',
@@ -86,21 +85,21 @@ export const metadata: Metadata = {
     'high-performance web apps',
   ],
 
-  authors: [{ name: 'Milind Verma', url: BASE_URL }],
-  creator: 'Milind Verma',
-  publisher: 'Milind Verma',
+  authors: [{ name: 'Vinita Sharma', url: BASE_URL }],
+  creator: 'Vinita Sharma',
+  publisher: 'Vinita Sharma',
 
   icons: {
-    icon: [{ url: '/logo/MILIND VERMA.png', type: 'image/png' }],
-    apple: '/logo/MILIND VERMA.png',
-    shortcut: '/logo/MILIND VERMA.png',
+    icon: [{ url: '/logo/VINITA SHARMA.png', type: 'image/png' }],
+    apple: '/logo/VINITA SHARMA.png',
+    shortcut: '/logo/VINITA SHARMA.png',
   },
 
   openGraph: {
     type: 'website',
     url: BASE_URL,
-    siteName: 'BuildWithMilind',
-    title: 'Milind Verma | Full Stack Engineer & Web Developer',
+    siteName: 'BuildWithVinita',
+    title: 'Vinita Sharma | Full Stack Engineer & Web Developer',
     description:
       'Building high-performance web systems and ML applications. React · Node.js · Next.js · Python. Available for hire.',
     locale: 'en_US',
@@ -109,7 +108,7 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/opengraph-image`,
         width: 1200,
         height: 630,
-        alt: 'Milind Verma — Full Stack Engineer & Web Developer',
+        alt: 'Vinita Sharma — Full Stack Engineer & Web Developer',
         type: 'image/png',
       },
     ],
@@ -117,9 +116,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    site: '@its_milind',
-    creator: '@its_milind',
-    title: 'Milind Verma | Full Stack Engineer & Web Developer',
+    site: '@vinita8981',
+    creator: '@vinita8981',
+    title: 'Vinita Sharma | Full Stack Engineer & Web Developer',
     description:
       'Building production-grade web systems and ML models. React · Next.js · Node.js · Python. Available for hire.',
     images: [`${BASE_URL}/opengraph-image`],
@@ -151,14 +150,14 @@ export const metadata: Metadata = {
 
   appleWebApp: {
     capable: true,
-    title: 'Milind Verma',
+    title: 'Vinita Sharma',
     statusBarStyle: 'black-translucent',
   },
 
   other: {
     'theme-color': '#0A0A0A',
     'msapplication-TileColor': '#0A0A0A',
-    'application-name': 'Milind Verma',
+    'application-name': 'Vinita Sharma',
   },
 };
 
@@ -172,8 +171,8 @@ const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   '@id': `${BASE_URL}/#person`,
-  name: 'Milind Verma',
-  alternateName: ['its_milind', 'Milindverma24'],
+  name: 'Vinita Sharma',
+  alternateName: ['vinita8981'],
   url: BASE_URL,
   image: {
     '@type': 'ImageObject',
@@ -243,16 +242,9 @@ const personSchema = {
     },
   ],
   sameAs: [
-    'https://github.com/Milindverma24',
-    'https://www.linkedin.com/in/milind-verma-8aa10a308/',
-    'https://www.instagram.com/_itsmilindd/',
+    'https://github.com/vinita8981',
+    'https://www.linkedin.com/in/vinita-sharma-9506a1375/',
   ],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    email: 'anshverma24112005@gmail.com',
-    contactType: 'professional inquiry',
-    availableLanguage: 'English',
-  },
 };
 
 const websiteSchema = {
@@ -260,9 +252,9 @@ const websiteSchema = {
   '@type': 'WebSite',
   '@id': `${BASE_URL}/#website`,
   url: BASE_URL,
-  name: 'BuildWithMilind',
+  name: 'BuildWithVinita',
   description:
-    'Portfolio and professional profile of Milind Verma — Full Stack Engineer.',
+    'Portfolio and professional profile of Vinita Sharma — Full Stack Engineer.',
   author: { '@id': `${BASE_URL}/#person` },
   publisher: { '@id': `${BASE_URL}/#person` },
   inLanguage: 'en-US',
@@ -282,9 +274,9 @@ const profilePageSchema = {
   '@type': 'ProfilePage',
   '@id': `${BASE_URL}/#profilepage`,
   url: BASE_URL,
-  name: 'BuildWithMilind — Full Stack Engineer Portfolio',
+  name: 'BuildWithVinita — Full Stack Engineer Portfolio',
   description:
-    'Professional portfolio of Milind Verma (its_milind), a Full Stack Engineer building production-grade web systems.',
+    'Professional portfolio of Vinita Sharma, a Full Stack Engineer building production-grade web systems.',
   dateCreated: '2024-01-01',
   dateModified: new Date().toISOString().split('T')[0],
   mainEntity: { '@id': `${BASE_URL}/#person` },

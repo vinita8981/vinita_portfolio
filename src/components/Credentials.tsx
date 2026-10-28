@@ -351,7 +351,7 @@ function GitHubActivity({ sectionInView }: { sectionInView: boolean }) {
             </span>
           </div>
           <a
-            href="https://github.com/Milindverma24"
+            href="https://github.com/vinita8981"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-white/25 hover:text-white/60 transition-colors duration-200"
@@ -360,7 +360,7 @@ function GitHubActivity({ sectionInView }: { sectionInView: boolean }) {
               className="text-[0.55rem] tracking-[0.18em] uppercase"
               style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
             >
-              @Milindverma24
+              @vinita8981
             </span>
             <ExternalLink size={10} />
           </a>
@@ -700,7 +700,7 @@ export function Credentials() {
                   animate={resumeInView ? { y: 0 } : {}}
                   transition={{ delay: 0.22, duration: 0.75, ease: EASE }}
                 >
-                  Milind Verma
+                  Vinita Sharma
                 </motion.h3>
               </div>
 
@@ -715,7 +715,7 @@ export function Credentials() {
                 animate={resumeInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.42, duration: 0.55, ease: EASE }}
               >
-                B.Tech CSE Student — VIT Bhopal · Open to Work
+                Software Engineer &amp; Full Stack Developer · Open to Work
               </motion.p>
 
               {/* Stack tags */}
@@ -742,7 +742,7 @@ export function Credentials() {
               animate={resumeInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5, duration: 0.6, ease: EASE }}
             >
-              <MagneticBtn href="/resume/Resume_Milind_Verma.pdf" />
+              <MagneticBtn href="/resume/Resume_Vinita_Sharma.pdf" />
             </motion.div>
           </div>
 

@@ -107,21 +107,21 @@ export function Navbar() {
           }}
         >
           {/* Logo — always left */}
-          <a href="#" className="flex items-center gap-2.5 shrink-0 mr-3" aria-label="BuildWithMilind">
+          <a href="#" className="flex items-center gap-2.5 shrink-0 mr-3" aria-label="BuildWithVinita">
             <Image
-              src="/logo/MILIND VERMA.png"
-              alt="BuildWithMilind"
+              src="/logo/VINITA SHARMA.png"
+              alt="Vinita Sharma"
               width={34}
               height={34}
               priority
-              className="block object-contain rounded-md"
+              className="block object-cover rounded-full"
               style={{ height: 32, width: 32 }}
             />
             <span 
               className="text-white text-[0.68rem] font-black tracking-[0.14em] uppercase"
               style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
             >
-              BuildWithMilind
+              BuildWithVinita
             </span>
           </a>
 
@@ -160,22 +160,22 @@ export function Navbar() {
               border: '1px solid rgba(255,255,255,0.08)',
               boxShadow: '0 6px 28px rgba(0,0,0,0.40)',
             }}
-            aria-label="BuildWithMilind"
+            aria-label="BuildWithVinita"
           >
             <Image
-              src="/logo/MILIND VERMA.png"
-              alt="BuildWithMilind"
+              src="/logo/VINITA SHARMA.png"
+              alt="Vinita Sharma"
               width={28}
               height={28}
               priority
-              className="block object-contain rounded-md"
+              className="block object-cover rounded-full"
               style={{ height: 24, width: 24 }}
             />
             <span 
               className="text-white text-[0.62rem] font-black tracking-[0.12em] uppercase pr-1"
               style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
             >
-              BuildWithMilind
+              BuildWithVinita
             </span>
           </a>
 

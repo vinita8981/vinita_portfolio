@@ -14,8 +14,8 @@ function readLogoB64(filename: string): string {
   }
 }
 
-const LOGO_HORIZONTAL = readLogoB64('MILIND VERMA.png');
-const LOGO_ICON = readLogoB64('MILIND VERMA.png');
+const LOGO_HORIZONTAL = readLogoB64('VINITA SHARMA.png');
+const LOGO_ICON = readLogoB64('VINITA SHARMA.png');
 
 function emailTemplate({ name, email, message }: { name: string; email: string; message: string }) {
   return `<!DOCTYPE html>
@@ -23,7 +23,7 @@ function emailTemplate({ name, email, message }: { name: string; email: string; 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New Message — Milind Verma</title>
+  <title>New Message — Vinita Sharma</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -45,7 +45,7 @@ function emailTemplate({ name, email, message }: { name: string; email: string; 
                   <td>
                     <img
                       src="${LOGO_HORIZONTAL}"
-                      alt="Milind Verma"
+                      alt="Vinita Sharma"
                       width="140"
                       style="display:block; height:auto;"
                     />
@@ -153,8 +153,8 @@ function emailTemplate({ name, email, message }: { name: string; email: string; 
           <tr>
             <td style="padding-top: 20px;">
               <p style="font-size:10px; letter-spacing:0.12em; color:rgba(255,255,255,0.12); line-height:1.8;">
-                This message was submitted via the contact form at milindverma24.github.io<br/>
-                © 2026 Milind Verma · All rights reserved
+                This message was submitted via the contact form at vinita8981.github.io<br/>
+                © 2026 Vinita Sharma · All rights reserved
               </p>
             </td>
           </tr>

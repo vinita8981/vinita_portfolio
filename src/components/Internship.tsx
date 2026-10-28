@@ -21,7 +21,7 @@ const INTERNSHIPS = [
       'Integrated relational databases and optimized queries to handle real-time logging and operational telemetry.',
     ],
     stack: ['React.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'SQL'],
-    github: 'https://github.com/Milindverma24/visitor-management',
+    github: 'https://github.com/vinita8981',
     deployed: 'https://visitor-management-iota-nine.vercel.app/',
   },
 ];

@@ -19,7 +19,7 @@ const PROJECTS = [
     stack: ['React', 'Spring Boot', 'PostgreSQL', 'Redis', 'Cohere AI'],
     image: '/projects/carbon_mitra.png',
     year: '2026',
-    github: 'https://github.com/Milindverma24/carbon_tracker',
+    github: 'https://github.com/vinita8981',
     deployed: 'https://carbon-tracker-nine-mu.vercel.app/',
     detailsLink: '/projects/carbonmitra',
   },
@@ -31,7 +31,7 @@ const PROJECTS = [
     stack: ['React.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'JWT'],
     image: '/projects/visitor_management.png',
     year: '2025',
-    github: 'https://github.com/Milindverma24/visitor-management',
+    github: 'https://github.com/vinita8981',
     deployed: 'https://visitor-management-iota-nine.vercel.app/',
   },
   {
@@ -42,7 +42,7 @@ const PROJECTS = [
     stack: ['Python', 'Deep Learning', 'U-Net', 'OpenCV', 'Flask'],
     image: '/projects/gis_project.jpeg',
     year: '2026',
-    github: 'https://github.com/Milindverma24',
+    github: 'https://github.com/vinita8981',
     deployed: 'https://saturn-16-gis.hf.space/',
   },
   {
@@ -53,7 +53,7 @@ const PROJECTS = [
     stack: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'Streamlit'],
     image: '/projects/metal healthdetection.jpeg',
     year: '2025',
-    github: 'https://github.com/Milindverma24/Mental-health-detection',
+    github: 'https://github.com/vinita8981',
     deployed: 'https://mental-health-24.streamlit.app/',
   },
   {
@@ -64,7 +64,7 @@ const PROJECTS = [
     stack: ['Python', 'Data Analysis', 'NetworkX', 'Matplotlib'],
     image: '/projects/somopy.jpeg',
     year: '2024',
-    github: 'https://github.com/Milindverma24/SuMoPy',
+    github: 'https://github.com/vinita8981',
     deployed: 'https://sumopy.vercel.app',
   },
 ] as const;
@@ -508,7 +508,7 @@ function GithubCTA({ align }: { align: 'left' | 'right' }) {
       {/* CTA Button */}
       <div style={{ display: 'flex', justifyContent: right ? 'flex-end' : 'flex-start' }}>
         <a
-          href="https://github.com/Milindverma24"
+          href="https://github.com/vinita8981"
           target="_blank"
           rel="noopener noreferrer"
           style={{

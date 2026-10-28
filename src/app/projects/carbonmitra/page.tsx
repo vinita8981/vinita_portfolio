@@ -124,7 +124,7 @@ export default function CarbonMitraDetails() {
             {/* Links CTA */}
             <div className="flex flex-wrap gap-4">
               <a 
-                href="https://vercel.com/milind24/carbon-tracker" 
+                href="https://carbon-tracker-nine-mu.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-[#060807] text-xs font-black uppercase tracking-widest px-6 py-3.5 rounded-lg shadow-lg shadow-emerald-500/10 transition-all duration-300"
@@ -133,7 +133,7 @@ export default function CarbonMitraDetails() {
                 <ArrowUpRight size={14} />
               </a>
               <a 
-                href="https://github.com/Milindverma24/carbon_tracker" 
+                href="https://github.com/vinita8981" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#0E1714] hover:bg-[#15231F] border border-[#10B981]/30 hover:border-[#10B981]/60 text-white text-xs font-bold uppercase tracking-widest px-6 py-3.5 rounded-lg transition-all duration-300"
@@ -453,7 +453,7 @@ export default function CarbonMitraDetails() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="https://github.com/Milindverma24/carbon_tracker"
+              href="https://github.com/vinita8981"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#10B981] hover:bg-emerald-400 text-[#060807] text-xs font-black uppercase tracking-widest px-6 py-3 rounded-lg transition-colors duration-300"
@@ -462,7 +462,7 @@ export default function CarbonMitraDetails() {
               GitHub Repository
             </a>
             <a 
-              href="https://vercel.com/milind24/carbon-tracker"
+              href="https://carbon-tracker-nine-mu.vercel.app/"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-white text-xs font-bold uppercase tracking-widest px-6 py-3 rounded-lg border border-white/10 transition-colors duration-300"

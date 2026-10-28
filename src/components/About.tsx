@@ -261,7 +261,7 @@ export function About() {
                 transition={{ duration: 0.6, delay: 0.8, ease: EASE }}
               >
                 <a
-                  href="https://github.com/Milindverma24"
+                  href="https://github.com/vinita8981"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[0.65rem] tracking-[0.18em] uppercase font-medium text-black/40 hover:text-black border-b border-black/20 hover:border-black pb-px transition-colors"
@@ -270,7 +270,7 @@ export function About() {
                   GitHub
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/milind-verma-8aa10a308/"
+                  href="https://www.linkedin.com/in/vinita-sharma-9506a1375/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[0.65rem] tracking-[0.18em] uppercase font-medium text-black/40 hover:text-black border-b border-black/20 hover:border-black pb-px transition-colors"

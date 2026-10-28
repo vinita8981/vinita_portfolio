@@ -155,14 +155,13 @@ export default function NotFound() {
         transition={{ duration: 0.6, ease: EASE }}
       >
         {/* Logo */}
-        <Link href="/" aria-label="BuildWithMilind">
+        <Link href="/" aria-label="BuildWithVinita">
           <Image
-            src="/logo/MILIND VERMA.png"
-            alt="BuildWithMilind"
-            width={110}
-            height={28}
-            style={{ filter: 'invert(1)', opacity: 0.4 }}
-            className="hover:opacity-70 transition-opacity duration-300"
+            src="/logo/VINITA SHARMA.png"
+            alt="Vinita Sharma"
+            width={32}
+            height={32}
+            className="rounded-full hover:opacity-70 transition-opacity duration-300"
           />
         </Link>
 
@@ -306,7 +305,7 @@ export default function NotFound() {
           className="text-[0.5rem] tracking-[0.2em] uppercase text-black/15 font-medium pt-6"
           style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
         >
-          © 2026 Milind Verma
+          © 2026 Vinita Sharma
         </span>
         <span
           className="text-[0.5rem] tracking-[0.18em] uppercase text-black/12 font-medium pt-6"
@@ -351,7 +350,7 @@ export default function NotFound() {
             letterSpacing: '0.22em',
           }}
         >
-          Milind Verma · 2026
+          Vinita Sharma · 2026
         </span>
         <div className="w-px h-12 bg-black/8" />
       </motion.div>

@@ -310,7 +310,7 @@ export function AIAssistant() {
                           margin: 0,
                         }}
                       >
-                        Milind&apos;s AI
+                        Vinita&apos;s AI
                       </p>
                       {/* Live dot */}
                       <span style={{ position: 'relative', display: 'inline-flex', width: 5, height: 5 }}>
@@ -338,7 +338,7 @@ export function AIAssistant() {
                         marginTop: 2,
                       }}
                     >
-                      Ask anything about Milind
+                      Ask anything about Vinita
                     </p>
                   </div>
                 </div>
@@ -400,7 +400,7 @@ export function AIAssistant() {
                           margin: 0,
                         }}
                       >
-                        Hello. I&apos;m Milind&apos;s AI assistant — I know his full engineering history, every project he&apos;s shipped, and what he&apos;s currently building.
+                        Hello. I&apos;m Vinita&apos;s AI assistant — I know her full engineering history, every project she&apos;s shipped, and what she&apos;s currently building.
                       </p>
                       <p
                         style={{

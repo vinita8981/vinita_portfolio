@@ -133,8 +133,8 @@ export function Hero() {
               fontSize: 'clamp(3.8rem, 11.5vw, 14rem)',
             }}
           >
-            <span ref={line1Ref} className="block cursor-default select-none">Milind</span>
-            <span ref={line2Ref} className="block cursor-default select-none">Verma</span>
+            <span ref={line1Ref} className="block cursor-default select-none">Vinita</span>
+            <span ref={line2Ref} className="block cursor-default select-none">Sharma</span>
           </h1>
 
           {/* Italic serif tagline */}

@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://milindverma24.github.io/sitemap.xml',
-    host: 'https://milindverma24.github.io',
+    sitemap: 'https://vinita8981.github.io/sitemap.xml',
+    host: 'https://vinita8981.github.io',
   };
 }

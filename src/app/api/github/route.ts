@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
-const USERNAME = 'Milindverma24';
+const USERNAME = 'vinita8981';
 const GH_TOKEN  = process.env.GITHUB_TOKEN;
 const GH_HEADERS: Record<string, string> = {
-  'User-Agent': 'milindverma-portfolio',
+  'User-Agent': 'vinita-portfolio',
   Accept: 'application/vnd.github+json',
   ...(GH_TOKEN ? { Authorization: `Bearer ${GH_TOKEN}` } : {}),
 };

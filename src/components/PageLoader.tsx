@@ -114,12 +114,12 @@ export function PageLoader({ onDone }: { onDone: () => void }) {
         style={{ opacity: 0 }}
       >
         <Image
-          src="/logo/MILIND VERMA.png"
-          alt="BuildWithMilind"
+          src="/logo/VINITA SHARMA.png"
+          alt="Vinita Sharma"
           width={520}
           height={140}
           priority
-          style={{ height: 'clamp(60px, 12vw, 130px)', width: 'auto', objectFit: 'contain', opacity: 0.88 }}
+          style={{ height: 'clamp(60px, 12vw, 130px)', width: 'auto', objectFit: 'contain', opacity: 0.95 }}
         />
 
         {/* Loading indicator below logo */}
