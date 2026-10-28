@@ -535,14 +535,14 @@ export function Contact() {
           {/* Big background wordmark */}
           <div
             aria-hidden
-            className="absolute bottom-0 left-0 right-0 pointer-events-none select-none flex justify-center items-end"
+            className="absolute bottom-0 left-0 right-0 pointer-events-none select-none flex justify-center items-end overflow-hidden px-4"
           >
             <span
               ref={wordmarkRef}
               style={{
                 fontFamily: 'Satoshi, system-ui, sans-serif',
                 fontWeight: 900,
-                fontSize: 'clamp(4.5rem, 18vw, 22rem)',
+                fontSize: 'clamp(1.5rem, 11.2vw, 15rem)',
                 letterSpacing: '-0.02em',
                 color: 'rgba(255,255,255,0.032)',
                 lineHeight: 0.82,

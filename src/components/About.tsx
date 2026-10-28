@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import { motion, useInView, useMotionValue, animate } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -85,7 +84,6 @@ function AnimatedQuote({ inView }: { inView: boolean }) {
 export function About() {
   const sectionRef = useRef<HTMLElement>(null);
   const statsRef   = useRef<HTMLDivElement>(null);
-  const imageRef   = useRef<HTMLDivElement>(null);
   const lineRef    = useRef<HTMLDivElement>(null);
 
   const sectionInView = useInView(sectionRef, { once: true, margin: '-10%' });
@@ -104,19 +102,6 @@ export function About() {
             duration: 1.4,
             ease: 'power4.inOut',
             scrollTrigger: { trigger: lineRef.current, start: 'top 85%' },
-          }
-        );
-      }
-
-      /* Image clip-path reveal */
-      if (imageRef.current) {
-        gsap.fromTo(imageRef.current,
-          { clipPath: 'inset(0 100% 0 0)' },
-          {
-            clipPath: 'inset(0 0% 0 0)',
-            duration: 1.4,
-            ease: 'power4.inOut',
-            scrollTrigger: { trigger: imageRef.current, start: 'top 78%' },
           }
         );
       }
@@ -175,74 +160,53 @@ export function About() {
         {/* Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[clamp(3rem,6vw,8rem)]">
 
-          {/* Left: stats + portrait */}
-          <div className="flex flex-col gap-12 justify-between">
-            <div ref={statsRef} className="grid grid-cols-2 gap-x-8 gap-y-12 content-start">
-              {STATS.map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 28, clipPath: 'inset(100% 0 0 0)' }}
-                  animate={statsInView ? { opacity: 1, y: 0, clipPath: 'inset(0% 0 0 0)' } : {}}
-                  transition={{ duration: 0.7, delay: i * 0.1, ease: EASE }}
+          {/* Left: stats */}
+          <div ref={statsRef} className="grid grid-cols-2 gap-x-8 gap-y-12 content-start">
+            {STATS.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 28, clipPath: 'inset(100% 0 0 0)' }}
+                animate={statsInView ? { opacity: 1, y: 0, clipPath: 'inset(0% 0 0 0)' } : {}}
+                transition={{ duration: 0.7, delay: i * 0.1, ease: EASE }}
+              >
+                <p
+                  className="font-black text-black leading-none tracking-tighter tabular-nums"
+                  style={{
+                    fontFamily: 'Satoshi, system-ui, sans-serif',
+                    fontWeight: 900,
+                    fontSize:   'clamp(3.5rem, 7vw, 9rem)',
+                  }}
                 >
-                  <p
-                    className="font-black text-black leading-none tracking-tighter tabular-nums"
-                    style={{
-                      fontFamily: 'Satoshi, system-ui, sans-serif',
-                      fontWeight: 900,
-                      fontSize:   'clamp(3.5rem, 7vw, 9rem)',
-                    }}
-                  >
-                    <CountUp
-                      target={stat.target}
-                      suffix={stat.suffix}
-                      inView={statsInView}
-                      delay={i * 0.12}
-                    />
-                  </p>
-
-                  <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={statsInView ? { opacity: 1 } : {}}
-                    transition={{ duration: 0.5, delay: 0.4 + i * 0.1, ease: EASE }}
-                    className="mt-2 text-[0.75rem] font-semibold tracking-[0.14em] uppercase text-black/40"
-                    style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
-                  >
-                    {stat.label}
-                  </motion.p>
-
-                  {/* Underline draws in after the number settles */}
-                  <motion.div
-                    className="mt-4 h-px bg-black/10"
-                    initial={{ scaleX: 0, transformOrigin: 'left' }}
-                    animate={statsInView ? { scaleX: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.6 + i * 0.1, ease: EASE }}
+                  <CountUp
+                    target={stat.target}
+                    suffix={stat.suffix}
+                    inView={statsInView}
+                    delay={i * 0.12}
                   />
-                </motion.div>
-              ))}
-            </div>
+                </p>
 
-            {/* Editorial Portrait Card */}
-            <div
-              ref={imageRef}
-              className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden border border-black/10 bg-black/5 group cursor-pointer"
-            >
-              <Image
-                src="/profile/vinita-professional.jpg"
-                alt="Vinita Sharma - Software Engineer"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-[0.65rem] font-medium tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span>Vinita Sharma</span>
-                <span>Full Stack & ML</span>
-              </div>
-            </div>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={statsInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.5, delay: 0.4 + i * 0.1, ease: EASE }}
+                  className="mt-2 text-[0.75rem] font-semibold tracking-[0.14em] uppercase text-black/40"
+                  style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
+                >
+                  {stat.label}
+                </motion.p>
+
+                {/* Underline draws in after the number settles */}
+                <motion.div
+                  className="mt-4 h-px bg-black/10"
+                  initial={{ scaleX: 0, transformOrigin: 'left' }}
+                  animate={statsInView ? { scaleX: 1 } : {}}
+                  transition={{ duration: 0.8, delay: 0.6 + i * 0.1, ease: EASE }}
+                />
+              </motion.div>
+            ))}
           </div>
 
-          {/* Right: quote + body + image */}
+          {/* Right: quote + body */}
           <div className="flex flex-col justify-between gap-10">
 
             <AnimatedQuote inView={sectionInView} />
